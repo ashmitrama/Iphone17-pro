@@ -118,3 +118,18 @@ ScrollTrigger.create({
 });
 }
 page1();
+
+const pg2v2 = document.getElementById("pg2v");
+
+ScrollTrigger.create({
+  trigger: "#pg2v",
+  // markers:true,
+  start: "top 80%",
+  end: "bottom 10%",
+  scrub:1,
+  onEnter: () => pg2v.play(),
+  onLeave: () => pg2v.pause(),
+  onEnterBack: () => pg2v.play(),
+  onLeaveBack: () => pg2v.pause()
+});
+
